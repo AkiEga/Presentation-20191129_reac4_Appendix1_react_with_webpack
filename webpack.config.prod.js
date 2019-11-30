@@ -1,12 +1,12 @@
 module.exports = {
-	mode: 'development',
+	mode: 'production',
 	entry: __dirname + '/src/index.tsx',
 	output: {
 	  path: __dirname + '/dist',
 	  filename: 'bundle.js'
 	},
   
-	devtool: 'hidden-source-map',
+	devtool: 'cheap-eval-source-map',
   
 	resolve: {
 	  extensions: ['.ts', '.tsx', '.js']
